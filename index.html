@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <title>CO²-Footprint</title>
+    <!-- Import Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-co2"></div>
+    <!-- Tabelle -->
+    <div class="container mt-4">
+        <h2>CO²-Emissionsdaten für das Jahr 2023</h2>
+        <input type="text" id="searchInput" onkeyup="filterTable()" class="form-control my-3" placeholder="Unternehmen / Land filtern">
+        <table id="dataTable" class="table table-bordered">
+            <thead>   
+                <tr>
+                    <th onclick="sortTable(0)">Unternehmen</th>
+                    <th onclick="sortTable(1)">Land</th>
+                    <th onclick="sortTable(2)">CO²-Ausstoß in kg</th>
+                </tr>
+            </thead>
+            <!-- Tabelleninhalt -->
+            <tbody>
+            <tr>
+                <td>Nike</td>
+                <td>USA</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>SAP</td>
+                <td>Deutschland</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Toyota</td>
+                <td>Japan</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>Tesla</td>
+                <td>USA</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Porsche</td>
+                <td>Deutschland</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Mercedes</td>
+                <td>Deutschland</td>
+                <td>500</td>
+            </tr>
+            </tbody>
+    </table>
+    </div>
+    <!-- Footer -->
+    <div id="footer-co2"></div>
+    <!-- Einbindung Javascript-Datei -->
+    <script src="script.js"></script>
+</body>
+</html>

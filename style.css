@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #d4e7d9;
+    padding: 10px;
+    text-align: center; 
+}
+
+#logo {
+    width: 100px;
+}
+
+main {
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+footer {
+    background-color: #d4e7d9;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #d4e7d9;
+    cursor: pointer;
+}
+
+.ueberuns {
+    width: 35%;
+    margin: 20px auto;
+}
+
+.datenschutz {
+    width: 80%;
+    text-align: left;
+    margin: 20px auto;
+}
+
+.scroll{
+    overflow-y: scroll;
+    height: 550px;
+    width: 60%;
+    overflow: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.impressum {
+    width: 15%;
+    margin: 20px auto;
+}
+
+h2, h3, h4 {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+@media (max-width: 1452px) {
+    main, .ueberuns, .datenschutz, .scroll, .impressum {
+        margin: 10px auto;
+        width: 90%; 
+    }
+}
+
+/* Anpassungen für Tablets */
+@media (max-width: 768px) {
+    main, .ueberuns, .datenschutz, .scroll, .impressum {
+        margin: 10px auto;
+        width: 90%; 
+    }
+
+    h2, h3, h4, h5 {
+        font-size: 1.5rem; 
+    }
+}
+
+/* Anpassungen für Smartphones */
+@media (max-width: 576px) {
+    main, .ueberuns, .datenschutz, .scroll, .impressum {
+        margin: 5px auto;
+        width: 95%; 
+    }
+    h2, h3, h4, h5 {
+        font-size: 1.25rem; 
+    }
+}
