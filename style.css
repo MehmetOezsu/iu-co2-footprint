@@ -8,7 +8,6 @@ body {
 header {
     background-color: #d4e7d9;
     padding: 10px;
-    text-align: center; 
 }
 
 #logo {
@@ -23,7 +22,6 @@ main {
 
 footer {
     background-color: #d4e7d9;
-    text-align: center;
     padding: 10px;
     position: fixed;
     bottom: 0;
@@ -114,4 +112,22 @@ nav ul li {
     h2, h3, h4, h5 {
         font-size: 1.25rem; 
     }
+}
+
+/* Rechts-nach-Links-Schriftkultur */
+.rtl nav ul {
+    direction: rtl;
+}
+
+.rtl nav ul li {
+    float: right;
+}
+
+/* Links-nach-Rechts-Schriftkultur */
+.ltr nav ul {
+    direction: ltr;
+}
+
+.ltr nav ul li {
+    float: left;
 }

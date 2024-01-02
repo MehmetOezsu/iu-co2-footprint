@@ -88,3 +88,26 @@ function filterTable() {
         }       
     }
 }
+
+// Funktion zum Erkennen der Schriftkultur und Anpassen der Link-Reihenfolge
+function adjustLinkOrder() {
+    const rtlLanguages = ['ar', 'he', 'fa']; // Liste der Sprachen mit Rechts-nach-Links-Schrift
+    const userLang = navigator.language || navigator.userLanguage;
+    const isRtl = rtlLanguages.some(lang => userLang.startsWith(lang));
+
+    if (isRtl) {
+        // Für Rechts-nach-Links-Schriftkulturen
+        document.body.classList.add('rtl');
+    } else {
+        // Für Links-nach-Rechts-Schriftkulturen
+        document.body.classList.add('ltr');
+    }
+}
+
+// Aufrufen der Funktion beim Laden der Seite
+document.addEventListener('DOMContentLoaded', function() {
+    loadHeader();
+    loadFooter();
+    adjustLinkOrder(); // Aufrufen der neuen Funktion
+});
+
